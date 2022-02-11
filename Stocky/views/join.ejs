@@ -1,0 +1,12 @@
+<%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="style.css">
+<form action = "/login" method = "POST" class = "loginform">
+    <label for="username">Username: </label>
+    <input type="text" id = "username" name="username" required>
+    <label for="password">Password: </label>
+    <input type="password" id = "password" name="password" required>
+    <label for="gameid">Game ID : </label>
+    <input type="text" id = "gameid" name="gameid" required>
+    <button> Submit</button>
+</form>
+<%- include('./partials/footer.ejs') %> 

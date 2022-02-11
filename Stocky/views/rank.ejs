@@ -1,0 +1,7 @@
+<%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="style.css">
+<% for(let i = 0; i < r.length; i++) { %>
+    <p><%= us[i] %> <%= r[i] %></p>
+    <% } %>
+
+<%- include('./partials/footer.ejs') %> 

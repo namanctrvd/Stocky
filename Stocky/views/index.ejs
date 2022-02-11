@@ -1,0 +1,13 @@
+<%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="style.css">
+    
+    <form method="get" action="/join">
+        <button type="submit" class ="create">Join Game</button>
+    </form>
+    <form method="get" action="/create">
+        <button type="submit" class ="create">Create Game</button>
+    </form>
+    <% if(gameid != 0) { %>
+        <p> Game ID : <%= gameid %> </p>
+        <% } %>
+<%- include('./partials/footer.ejs') %> 
