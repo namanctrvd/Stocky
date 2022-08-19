@@ -13,36 +13,36 @@ working of the market.
 ## Methodology
 
 ```mermaid
-graph TD;
-    A(SHORTLISTING TOP 50 COMPANIES)-->B(SCRAPING THEIR MARKET PRICES FROM NSE);
-    B-->C(USER JOINS THE GAME AND LOGS IN);
-    C-->D(THE PRICES ARE DISPLAYED IN THE MARKETPLACE);
-    D-->E(USER USES VIRTUAL MONEY TO BUY STOCKS);
-    E-->F(MARKET REFRESHES);
-    F-->G(USER INCURS EITHER A PROFIT OR A LOSS);
+graph LR;
+    A(SHORTLISTING TOP </br> 50 COMPANIES)-->B(SCRAPING </br> THEIR MARKET PRICES </br> FROM NSE);
+    B-->C(USER JOINS </br> THE GAME AND </br> LOGS IN);
+    C-->D(THE PRICES </br> ARE DISPLAYED IN </br> THE MARKETPLACE);
+    D-->E(USER USES </br> VIRTUAL MONEY </br> TO BUY STOCKS);
+    E-->F(MARKET </br> REFRESHES);
+    F-->G(USER INCURS </br> EITHER A PROFIT </br> OR A LOSS);
 ```
 
 ## User Sign In process
 ``` mermaid
 flowchart LR
-    A(User lands on the home page) ==> B[Users chooses to create or joun a game]
-    B ==> C[A unique ID is generated for the user]
-    C ==> D{User's entered credentials are right?}
-    D -->|No| E[The ID already redistered, but one of the entered credentials isn't correct]
+    A(User lands on </br> the home page) ==> B[Users chooses to </br> create or joun a game]
+    B ==> C[A unique ID is </br> generated for the user]
+    C ==> D{User's entered </br> credentials are right?}
+    D -->|No| E[The ID already </br> redistered, but one </br> of the entered credentials </br> isn't correct]
     E ==> A
-    D -->|Yes| F[User Sign In is succesfull]
+    D -->|Yes| F[User Sign In </br> is succesfull]
 ```
 
 ## Game process
 ``` mermaid
-flowchart TB
-    A(User Sign In is succesfull) ==> B{Balance is 0}
-    B -->|Yes| C[Bring back to main menu]
-    B -->|No| D[Take input of the company name, amount and operation]
-    D ==> E{Does user want to buy or sell that amount}
-    E -->|Sell| F[Decrease the amount of stocks user has for that company, add the amount to user's balance]
-    E -->|Buy| G[Increase the amount of stocks user has for that company and decrease the amount spent from user's balance]
-    G ==> H[Stock market updates and the game starts again]
+flowchart LR
+    A(User Sign In </br> is succesfull) ==> B{Balance is 0}
+    B -->|Yes| C[Bring back </br> to main menu]
+    B -->|No| D[Take input of </br> the company name, </br> amount and operation]
+    D ==> E{Does user </br> want to buy or </br> sell that amount}
+    E -->|Sell| F[Decrease the </br> amount of stocks user </br> has for that company, </br> add the amount </br> to user's balance]
+    E -->|Buy| G[Increase the amount </br> of stocks user has for </br> that company and decrease </br> the amount spent from </br> user's balance]
+    G ==> H[Stock market updates and </br> the game starts again]
     F ==> H
     H ==> B
 ```
