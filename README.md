@@ -46,5 +46,16 @@ flowchart LR
     F ==> H
     H ==> B
 ```
+## User Interface (Sreenshots)
 
+<section>
+<img src="https://user-images.githubusercontent.com/59576063/185710959-9226c38d-c858-4aa5-bfb4-cca909321fd7.png" />
+<h3 align="center">Landing Page </h3>
+<img src="https://user-images.githubusercontent.com/59576063/185710967-b7a804d3-b403-409e-92dc-0b6f74dc2c7e.png" />
+<h3 align="center">User Sign In Page </h3>
+<img src="https://user-images.githubusercontent.com/59576063/185710975-d0ae04fd-f4e9-4b3f-8ecb-11d52afd373a.png" />
+<h3 align="center">Market Place</h3>
+<img src="https://user-images.githubusercontent.com/59576063/185710983-a0cceda7-b483-4016-a555-184aff943581.png" />
+<h3 align="center">Buying Selling </h3>
+</section>
 
