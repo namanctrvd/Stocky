@@ -46,7 +46,7 @@ flowchart LR
     F ==> H
     H ==> B
 ```
-## User Interface (Sreenshots)
+## User Interface (Screenshots)
 
 <section>
 <img src="https://user-images.githubusercontent.com/59576063/185710959-9226c38d-c858-4aa5-bfb4-cca909321fd7.png" />
