@@ -10,33 +10,41 @@ working of the market.
 - Real Time Refreshes
 - Fully functional User Login system
 
-<h2 style="text-align: center;"> Methodology </h2>
-
+## Methodology
 
 ```mermaid
 graph TD;
-    SHORTLISTING TOP 50 COMPANIES-->SCRAPING THEIR MARKET PRICES FROM NSE;
-    SCRAPING THEIR MARKET PRICES FROM NSE-->C;
-    B-->D;
-    C-->D;
+    A(SHORTLISTING TOP 50 COMPANIES)-->B(SCRAPING THEIR MARKET PRICES FROM NSE);
+    B-->C(USER JOINS THE GAME AND LOGS IN);
+    C-->D(THE PRICES ARE DISPLAYED IN THE MARKETPLACE);
+    D-->E(USER USES VIRTUAL MONEY TO BUY STOCKS);
+    E-->F(MARKET REFRESHES);
+    F-->G(USER INCURS EITHER A PROFIT OR A LOSS);
 ```
 
-<p align="center">SHORTLISTING TOP 50 COMPANIES</p>
-<p align="center">|</p>
-<p align="center">WEB SCRAPING THEIR MARKET PRICES FROM NSE</p>
-<p align="center">|</p>
-<p align="center">USER JOINS THE GAME AND LOGS IN</p>
-<p align="center">|</p>
-<p align="center">THE PRICES ARE DISPLAYED IN THE MARKETPLACE</p>
-<p align="center">|</p>
-<p align="center">USER USES VIRTUAL MONEY TO BUY STOCKS</p>
-<p align="center">|</p>
-<p align="center">MARKET REFRESHES</p>
-<p align="center">|</p>
-<p align="center">USER INCURS EITHER A PROFIT OR A LOSS</p>
+## User Sign In process
+``` mermaid
+flowchart LR
+    A(User lands on the home page) ==> B[Users chooses to create or joun a game]
+    B ==> C[A unique ID is generated for the user]
+    C ==> D{User's entered credentials are right?}
+    D -->|No| E[The ID already redistered, but one of the entered credentials isn't correct]
+    E ==> A
+    D -->|Yes| F[User Sign In is succesfull]
+```
 
-<p align= "center">
-<img height= "600" style="maargin: 10px;" src="https://user-images.githubusercontent.com/59576063/185653130-bb7880a6-2860-42fd-b34d-fd8bd78bf9fb.png" />
-<img height= "600" style="maargin: 10px;" src="https://user-images.githubusercontent.com/59576063/185653166-e61e28a1-7349-409d-8b47-96cf16396489.png" />
-</p>
+## Game process
+``` mermaid
+flowchart TB
+    A(User Sign In is succesfull) ==> B{Balance is 0}
+    B -->|Yes| C[Bring back to main menu]
+    B -->|No| D[Take input of the company name, amount and operation]
+    D ==> E{Does user want to buy or sell that amount}
+    E -->|Sell| F[Decrease the amount of stocks user has for that company, add the amount to user's balance]
+    E -->|Buy| G[Increase the amount of stocks user has for that company and decrease the amount spent from user's balance]
+    G ==> H[Stock market updates and the game starts again]
+    F ==> H
+    H ==> B
+```
+
 
