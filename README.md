@@ -8,15 +8,15 @@ working of the market.
 
 ## Software and Libraries used 
 - For Web Scraping-
-  - Pymongo: The PyMongo distribution contains tools for interacting with MongoDB databases from   Python. [7]
-  - Beautiful Soup: Beautiful Soup is a Python package for parsing HTML and XML documents [8]
-  - Requests: Requests is a Python HTTP library. It makes HTTP requests simpler and more human-friendly [9]
+  - Pymongo: The PyMongo distribution contains tools for interacting with MongoDB databases from Python.
+  - Beautiful Soup: Beautiful Soup is a Python package for parsing HTML and XML documents.
+  - Requests: Requests is a Python HTTP library. It makes HTTP requests simpler and more human-friendly.
   - Mongoose, Morgan, Lodash
 
 - For DBMS 
   - GCP 
   - MONGODB 
-  - ATLAS (To host the MongoDB server) [10]
+  - ATLAS (To host the MongoDB server)
 
 - Languages Used
   - Python
